@@ -1,0 +1,5 @@
+mov rax, [rdx]; adress(rdx)->value rax=value
+
+mov [rdx + rax*4 + 4], r8	;WRONG, mov value in r8 to memory, but its a INT array so WRONG
+mov [rdx + rax*4 + 4], r8d      ;dont forget size or it will write two elements
+mov (int ptr, 8bytes), (value, 4 bytes)!!!!!!!!
